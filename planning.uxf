@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>250</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Player
+--
++name
++char_class
++c_health
++weapon
+--
+atttack(): string
+block(): string
+run(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1010</x>
+      <y>230</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>charClass
+--
++class_name
++start_weapon
++start_armor
++base_hp
++base_str
++base_dex
++base_evade
++base_fth
++base_luck
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>310</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1010</x>
+      <y>430</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Weapon
+--
++name
++damage
++primary_stat
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>330</y>
+      <w>100</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>250</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Enemy
+--
++name
+-hp
+-damage
+-luck
+--
+atttack(): null
+run(hp): null
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

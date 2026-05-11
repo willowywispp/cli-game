@@ -1,0 +1,5 @@
+add colored character when printing
+add location class
+add a help command
+add more combat options
+revamp tui
